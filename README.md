@@ -1,8 +1,6 @@
 <div align="center">
 
-# Hi there, I'm Bintang 👋
-
-### Rafael Paskah Bintang Pinasthi
+# Hi there, I'm Rafael Bintang 👋
 
 **Informatics Student · Universitas Sanata Dharma**
 
