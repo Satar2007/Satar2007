@@ -29,7 +29,7 @@ Saya tertarik membangun aplikasi yang bermanfaat untuk kegiatan sehari-hari. Git
 - 🌱 Mempelajari **web development, database, dan sistem cerdas**.
 - 🤝 Belajar berkolaborasi menggunakan **Git dan GitHub**.
 - 🎯 Ingin membangun aplikasi yang mudah digunakan dan bermanfaat.
-- 🎹 Di luar coding, saya menyukai **musik dan piano**.
+- 🎹 Di luar coding, saya menyukai **mendaki gunung dan bermain game**.
 
 ---
 
