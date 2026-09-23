@@ -1,16 +1,29 @@
-## Hi there 👋
+# Halo, saya Rafael Paskah Bintang Pinasthi 👋
 
-<!--
-**Satar2007/Satar2007** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Mahasiswa S1 Informatika di Universitas Sanata Dharma** · Asal Manyaran, Wonogiri
 
-Here are some ideas to get you started:
+Saya sedang belajar membangun aplikasi yang membantu pekerjaan sehari-hari. Saat ini saya banyak mengeksplorasi pengembangan web, basis data, dan penerapan sistem cerdas dalam proyek kuliah.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Yang sedang saya kerjakan
+
+- ☕ **JIMNY COFFEE** — aplikasi kasir berbasis Laravel untuk pengelolaan menu, stok, transaksi, dan bantuan bagi pengguna sesuai perannya.
+- 📚 Memperdalam **PHP, Laravel, MySQL, Python**, dan dasar pengembangan perangkat lunak.
+- 🧩 Merapikan dokumentasi dan proyek kuliah agar mudah dipelajari kembali dan dikembangkan.
+
+### Proyek pilihan
+
+| Proyek | Gambaran singkat |
+| --- | --- |
+| [Proyek Informatika](https://github.com/Satar2007/Proyek-Informatika) | Kumpulan pekerjaan dan pengembangan proyek selama belajar Informatika. |
+
+### Teknologi yang saya pelajari
+
+`PHP` · `Laravel` · `MySQL` · `Python` · `Git` · `GitHub`
+
+### Mari terhubung
+
+Lihat [repositori saya](https://github.com/Satar2007?tab=repositories) untuk mengikuti perkembangan proyek yang sedang saya kerjakan.
+
+---
+
+<sub>Belajar sedikit demi sedikit, lalu membangun sesuatu yang berguna.</sub>
