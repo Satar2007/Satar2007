@@ -1,0 +1,82 @@
+name: Profile - Metrics
+'on':
+  workflow_dispatch:
+  schedule:
+    - cron: '57 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/metrics.yml'
+      - 'scripts/publish-assets.sh'
+permissions:
+  contents: write
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  generate:
+    if: github.repository == 'Satar2007/Satar2007' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Check Metrics token
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [ -z "$METRICS_TOKEN" ]; then
+            echo '::error::Add repository Actions secret METRICS_TOKEN. See PROFILE-SETUP.md.'
+            exit 1
+          fi
+      - name: Generate overview, languages and activity
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # latest, verified 2026-09-30
+        with:
+          user: Satar2007
+          token: ${{ secrets.METRICS_TOKEN }}
+          output_action: none
+          template: classic
+          config_timezone: Asia/Jakarta
+          config_animations: 'yes'
+          config_display: large
+          config_padding: 24
+          plugins_errors_fatal: 'yes'
+          filename: metrics.svg
+          base: header, activity, community, repositories
+          plugin_languages: 'yes'
+          plugin_languages_limit: 6
+          plugin_languages_details: percentage
+          plugin_languages_indepth: 'no'
+          plugin_activity: 'yes'
+          plugin_activity_limit: 5
+          plugin_activity_days: 30
+          plugin_activity_visibility: public
+          plugin_activity_timestamps: 'yes'
+          config_order: base.header, base.activity+community, base.repositories, languages, activity
+      - name: Generate full-year isometric calendar
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # latest, verified 2026-09-30
+        with:
+          user: Satar2007
+          token: ${{ secrets.METRICS_TOKEN }}
+          output_action: none
+          template: classic
+          config_timezone: Asia/Jakarta
+          config_animations: 'yes'
+          config_display: large
+          config_padding: 24
+          plugins_errors_fatal: 'yes'
+          filename: isocalendar.svg
+          base: ''
+          plugin_isocalendar: 'yes'
+          plugin_isocalendar_duration: full-year
+      - name: Publish metrics
+        env:
+          TARGET_BRANCH: main
+        run: |
+          mkdir -p assets/generated
+          cp /metrics_renders/metrics.svg assets/generated/metrics.svg
+          cp /metrics_renders/isocalendar.svg assets/generated/isocalendar.svg
+          bash scripts/publish-assets.sh assets/generated/metrics.svg assets/generated/isocalendar.svg

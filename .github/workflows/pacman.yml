@@ -1,0 +1,42 @@
+name: Profile - Pac-Man
+'on':
+  workflow_dispatch:
+  schedule:
+    - cron: '17 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pacman.yml'
+      - 'scripts/publish-assets.sh'
+permissions:
+  contents: write
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  generate:
+    if: github.repository == 'Satar2007/Satar2007' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Generate Pac-Man light and dark SVGs
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa # main, verified 2026-09-30
+        with:
+          github_user_name: Satar2007
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          games: pacman
+          player_style: opportunistic
+          hide_month_labels: 'false'
+      - name: Copy and publish arcade assets
+        env:
+          TARGET_BRANCH: main
+        run: |
+          mkdir -p assets/generated
+          cp dist/pacman-contribution-graph.svg assets/generated/
+          cp dist/pacman-contribution-graph-dark.svg assets/generated/
+          bash scripts/publish-assets.sh assets/generated/pacman-contribution-graph.svg assets/generated/pacman-contribution-graph-dark.svg
