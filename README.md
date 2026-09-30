@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="SATAR — Rafael Bintang. Informatics student, building JIMNY COFFEE." />
+<img src="assets/header.svg" width="100%" alt="SATAR â€” Rafael Bintang. Informatics student, building JIMNY COFFEE." />
 
-**Informatics Student · Universitas Sanata Dharma · Indonesia**
+**Informatics Student Â· Universitas Sanata Dharma Â· Indonesia**
 
 Belajar, membangun, dan berkembang lewat teknologi.
 
@@ -25,18 +25,27 @@ Saya belajar membangun aplikasi yang bermanfaat untuk kegiatan sehari-hari. Di s
 
 ## Technologies I use & learn
 
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=PHP+%E2%80%A2+Laravel+%E2%80%A2+MySQL;HTML+%E2%80%A2+CSS+%E2%80%A2+JavaScript;Tailwind+CSS+%E2%80%A2+Python+%E2%80%A2+Git+%E2%80%A2+GitHub" alt="Typing tech stack animation" />
+</div>
+
+<br />
+
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=php,laravel,html,css,js,tailwind&amp;theme=dark" alt="PHP, Laravel, HTML, CSS, JavaScript, Tailwind CSS" /><br /><br />
-  <img src="https://skillicons.dev/icons?i=mysql,python,git,github&amp;theme=dark" alt="MySQL, Python, Git, GitHub" />
+  <img src="https://skillicons.dev/icons?i=php,laravel,html,css,js,tailwind,mysql,python,git,github&perline=5&theme=dark" alt="Technologies I use and learn" />
+</p>
+
+<p align="center">
+  <sub>Learning to build useful web applications, structured databases, and cleaner collaboration workflows.</sub>
 </p>
 
 ## Featured work
 
-### JIMNY COFFEE — Point of Sale
+### JIMNY COFFEE â€” Point of Sale
 
 Aplikasi kasir berbasis web yang saya kembangkan bersama tim untuk membantu operasional kedai kopi, mulai dari pesanan pelanggan sampai laporan penjualan.
 
-`Laravel` · `PHP` · `MySQL` · `Tailwind CSS` · `Alpine.js`
+`Laravel` Â· `PHP` Â· `MySQL` Â· `Tailwind CSS` Â· `Alpine.js`
 
 | Area | Pengembangan |
 | :--- | :--- |
@@ -46,37 +55,13 @@ Aplikasi kasir berbasis web yang saya kembangkan bersama tim untuk membantu oper
 | Operasional | Shift, kehadiran, dashboard, dan laporan penjualan |
 | Smart Assistant | Ringkasan serta pengingat sesuai peran pengguna |
 
-**[Explore JIMNY COFFEE →](https://github.com/Satar2007/Proyek-Informatika)**
+**[Explore JIMNY COFFEE â†’](https://github.com/Satar2007/Proyek-Informatika)**
 
 ### Cinematic 3D Portfolio
 
 Eksplorasi portofolio web dengan animasi, elemen 3D, dan interaksi visual untuk menampilkan profil serta proyek.
 
-**[Explore the portfolio repository →](https://github.com/Satar2007/cinematic-3d-portfolio-template)**
-
-## GitHub metrics
-
-<p align="center">
-  <img src="assets/generated/metrics.svg" alt="Statistik GitHub, bahasa pemrograman, dan aktivitas publik Rafael Bintang" width="720" />
-</p>
-
-<sub>Bahasa yang tampil mencerminkan komposisi kode repository yang dianalisis, bukan ukuran tingkat keahlian.</sub>
-
-## Contribution world
-
-Kontribusi sehari-hari, dilihat dari sudut yang berbeda.
-
-<p align="center">
-  <img src="assets/generated/skyline.gif" alt="Kalender kontribusi Satar2007 dalam animasi skyline 3D berputar" width="900" />
-</p>
-
-<details>
-<summary><b>Explore the isometric calendar</b></summary>
-<br />
-<p align="center">
-  <img src="assets/generated/isocalendar.svg" alt="Kalender kontribusi isometrik satu tahun dari lowlighter Metrics" width="720" />
-</p>
-</details>
+**[Explore the portfolio repository â†’](https://github.com/Satar2007/cinematic-3d-portfolio-template)**
 
 ## Contribution arcade
 
@@ -106,6 +91,6 @@ Kontribusi sehari-hari, dilihat dari sudut yang berbeda.
 
 [Explore my repositories](https://github.com/Satar2007?tab=repositories)
 
-<sub>Metrics by <a href="https://github.com/lowlighter/metrics">lowlighter</a> · Pac-Man by <a href="https://github.com/abozanona/pacman-contribution-graph">abozanona</a> · Skyline rendered from GitHub contribution data</sub>
+<sub>Metrics by <a href="https://github.com/lowlighter/metrics">lowlighter</a> Â· Pac-Man by <a href="https://github.com/abozanona/pacman-contribution-graph">abozanona</a> Â· Skyline rendered from GitHub contribution data</sub>
 
 </div>
