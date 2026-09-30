@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="SATAR â€” Rafael Bintang. Informatics student, building JIMNY COFFEE." />
+<img src="assets/header.svg" width="100%" alt="SATAR — Rafael Bintang. Informatics student, building JIMNY COFFEE." />
 
-**Informatics Student Â· Universitas Sanata Dharma Â· Indonesia**
+**Informatics Student · Universitas Sanata Dharma · Indonesia**
 
 Belajar, membangun, dan berkembang lewat teknologi.
 
@@ -26,26 +26,26 @@ Saya belajar membangun aplikasi yang bermanfaat untuk kegiatan sehari-hari. Di s
 ## Technologies I use & learn
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=PHP+%E2%80%A2+Laravel+%E2%80%A2+MySQL;HTML+%E2%80%A2+CSS+%E2%80%A2+JavaScript;Tailwind+CSS+%E2%80%A2+Python+%E2%80%A2+Git+%E2%80%A2+GitHub" alt="Typing tech stack animation" />
-</div>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=18&amp;pause=1200&amp;color=58A6FF&amp;center=true&amp;vCenter=true&amp;width=700&amp;lines=PHP+%E2%80%A2+Laravel+%E2%80%A2+MySQL;HTML+%E2%80%A2+CSS+%E2%80%A2+JavaScript;Tailwind+CSS+%E2%80%A2+Python+%E2%80%A2+Git+%E2%80%A2+GitHub" alt="Animated technology stack" />
 
 <br />
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=php,laravel,html,css,js,tailwind,mysql,python,git,github&perline=5&theme=dark" alt="Technologies I use and learn" />
-</p>
+<img src="https://skillicons.dev/icons?i=php,laravel,html,css,js,tailwind,mysql,python,git,github&amp;perline=5&amp;theme=dark" alt="Technologies I use and learn" />
 
-<p align="center">
-  <sub>Learning to build useful web applications, structured databases, and cleaner collaboration workflows.</sub>
-</p>
+<br /><br />
+
+<sub>Learning to build useful web applications, structured databases, and cleaner collaboration workflows.</sub>
+
+</div>
 
 ## Featured work
 
-### JIMNY COFFEE â€” Point of Sale
+### JIMNY COFFEE — Point of Sale
 
 Aplikasi kasir berbasis web yang saya kembangkan bersama tim untuk membantu operasional kedai kopi, mulai dari pesanan pelanggan sampai laporan penjualan.
 
-`Laravel` Â· `PHP` Â· `MySQL` Â· `Tailwind CSS` Â· `Alpine.js`
+`Laravel` · `PHP` · `MySQL` · `Tailwind CSS` · `Alpine.js`
 
 | Area | Pengembangan |
 | :--- | :--- |
@@ -55,13 +55,13 @@ Aplikasi kasir berbasis web yang saya kembangkan bersama tim untuk membantu oper
 | Operasional | Shift, kehadiran, dashboard, dan laporan penjualan |
 | Smart Assistant | Ringkasan serta pengingat sesuai peran pengguna |
 
-**[Explore JIMNY COFFEE â†’](https://github.com/Satar2007/Proyek-Informatika)**
+**[Explore JIMNY COFFEE →](https://github.com/Satar2007/Proyek-Informatika)**
 
 ### Cinematic 3D Portfolio
 
 Eksplorasi portofolio web dengan animasi, elemen 3D, dan interaksi visual untuk menampilkan profil serta proyek.
 
-**[Explore the portfolio repository â†’](https://github.com/Satar2007/cinematic-3d-portfolio-template)**
+**[Explore the portfolio repository →](https://github.com/Satar2007/cinematic-3d-portfolio-template)**
 
 ## Contribution arcade
 
@@ -91,6 +91,6 @@ Eksplorasi portofolio web dengan animasi, elemen 3D, dan interaksi visual untuk 
 
 [Explore my repositories](https://github.com/Satar2007?tab=repositories)
 
-<sub>Metrics by <a href="https://github.com/lowlighter/metrics">lowlighter</a> Â· Pac-Man by <a href="https://github.com/abozanona/pacman-contribution-graph">abozanona</a> Â· Skyline rendered from GitHub contribution data</sub>
+<sub>Pac-Man by <a href="https://github.com/abozanona/pacman-contribution-graph">abozanona</a></sub>
 
 </div>
