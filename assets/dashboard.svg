@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1680" viewBox="0 0 1200 1680" role="img" aria-labelledby="title desc">
+<title id="title">Rafael Bintang Developer Dashboard</title>
+<desc id="desc">Futuristic developer dashboard for the Satar2007 GitHub profile.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07111f"/>
+    <stop offset="0.55" stop-color="#081827"/>
+    <stop offset="1" stop-color="#06111c"/>
+  </linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0a1b2b"/>
+    <stop offset="1" stop-color="#07131f"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22d3ee"/>
+    <stop offset="1" stop-color="#38bdf8"/>
+  </linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#12314a" stroke-width="1" opacity=".25"/>
+  </pattern>
+  <style>
+    .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#dbeafe}
+    .m{font-family:Consolas,Menlo,monospace}
+    .muted{fill:#8aa0b8}
+    .cyan{fill:#38bdf8}
+    .line{stroke:#1e5677;stroke-width:1}
+    .soft{fill:#0b1d2d;stroke:#174462;stroke-width:1.2}
+    .chip{fill:#0d2032;stroke:#1a5474;stroke-width:1.2}
+    .title{font-size:34px;font-weight:700}
+    .h2{font-size:20px;font-weight:700;letter-spacing:1.5px}
+    .body{font-size:18px}
+    .small{font-size:14px}
+    .tiny{font-size:12px}
+    .scan{animation:scan 5s linear infinite}
+    @keyframes scan{0%{transform:translateY(-20px);opacity:0}10%{opacity:.35}90%{opacity:.25}100%{transform:translateY(1500px);opacity:0}}
+    .blink{animation:blink 1s steps(1,end) infinite}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    .pulse1{animation:pulse 4s ease-in-out infinite}
+    .pulse2{animation:pulse 4s ease-in-out .5s infinite}
+    .pulse3{animation:pulse 4s ease-in-out 1s infinite}
+    .pulse4{animation:pulse 4s ease-in-out 1.5s infinite}
+    .pulse5{animation:pulse 4s ease-in-out 2s infinite}
+    @keyframes pulse{0%,100%{opacity:.65}50%{opacity:1;filter:url(#glow)}}
+    .pac{animation:pacmove 7s linear infinite}
+    @keyframes pacmove{0%{transform:translateX(0)}100%{transform:translateX(980px)}}
+    .dot{animation:dotfade 7s linear infinite}
+    @keyframes dotfade{0%,15%{opacity:1}90%,100%{opacity:.2}}
+  </style>
+</defs>
+
+<rect width="1200" height="1680" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="1680" rx="28" fill="url(#grid)"/>
+<rect x="2" y="2" width="1196" height="1676" rx="26" fill="none" stroke="#1e6d93" stroke-width="2"/>
+
+<!-- header -->
+<text x="48" y="62" class="t m cyan title">&gt;_ Developer dashboard</text>
+<text x="830" y="58" class="t m muted small">BUILD · LEARN · EXPLORE · CREATE</text>
+<line x1="42" y1="90" x2="1158" y2="90" class="line"/>
+<circle cx="1090" cy="45" r="5" fill="#38bdf8" class="pulse1"/>
+<circle cx="1110" cy="45" r="5" fill="#38bdf8" class="pulse2"/>
+<circle cx="1130" cy="45" r="5" fill="#38bdf8" class="pulse3"/>
+
+<!-- about -->
+<rect x="42" y="118" width="660" height="300" rx="18" class="soft"/>
+<text x="68" y="155" class="t m cyan h2">01. ABOUT ME</text>
+<text x="68" y="198" class="t body">
+  <tspan x="68" dy="0">Halo! Saya Bintang, mahasiswa S1 Informatika</tspan>
+  <tspan x="68" dy="28">Universitas Sanata Dharma, berasal dari Manyaran,</tspan>
+  <tspan x="68" dy="28">Wonogiri. Saya membangun aplikasi yang bermanfaat,</tspan>
+  <tspan x="68" dy="28">mendokumentasikan proses belajar, dan berkolaborasi</tspan>
+  <tspan x="68" dy="28">melalui Git dan GitHub.</tspan>
+</text>
+<text x="68" y="382" class="t muted small">⌖  Manyaran, Wonogiri</text>
+
+<!-- focus -->
+<rect x="724" y="118" width="434" height="300" rx="18" class="soft"/>
+<text x="750" y="155" class="t m cyan h2">02. WHAT I FOCUS ON</text>
+<g class="t">
+  <rect x="750" y="180" width="380" height="48" rx="10" class="chip"/>
+  <text x="770" y="210" class="body cyan">▣  Building</text>
+  <text x="935" y="200" class="tiny muted">JIMNY COFFEE</text><text x="935" y="216" class="tiny muted">Laravel POS</text>
+  <rect x="750" y="238" width="380" height="48" rx="10" class="chip"/>
+  <text x="770" y="268" class="body cyan">▤  Learning</text>
+  <text x="935" y="258" class="tiny muted">Web · Database</text><text x="935" y="274" class="tiny muted">AI · Citra</text>
+  <rect x="750" y="296" width="380" height="48" rx="10" class="chip"/>
+  <text x="770" y="326" class="body cyan">◉  Exploring</text>
+  <text x="935" y="316" class="tiny muted">Interactive UI</text><text x="935" y="332" class="tiny muted">3D for web</text>
+  <rect x="750" y="354" width="380" height="48" rx="10" class="chip"/>
+  <text x="770" y="384" class="body cyan">◆  Beyond coding</text>
+  <text x="935" y="374" class="tiny muted">Hiking</text><text x="935" y="390" class="tiny muted">Gaming</text>
+</g>
+
+<!-- technologies -->
+<text x="42" y="470" class="t m cyan h2">03. TECHNOLOGIES I USE &amp; LEARN</text>
+<text x="855" y="468" class="t m muted tiny">TOOLS FOR A BETTER TOMORROW <tspan class="blink">_</tspan></text>
+<line x1="42" y1="488" x2="1158" y2="488" class="line"/>
+
+<g transform="translate(42 508)">
+  <g class="pulse1"><rect x="0" y="0" width="102" height="88" rx="14" class="chip"/><text x="51" y="40" text-anchor="middle" class="t m body">PHP</text><text x="51" y="68" text-anchor="middle" class="t m cyan tiny">PHP</text></g>
+  <g class="pulse2"><rect x="112" y="0" width="102" height="88" rx="14" class="chip"/><text x="163" y="40" text-anchor="middle" class="t m body">◇</text><text x="163" y="68" text-anchor="middle" class="t m cyan tiny">LARAVEL</text></g>
+  <g class="pulse3"><rect x="224" y="0" width="102" height="88" rx="14" class="chip"/><text x="275" y="40" text-anchor="middle" class="t m body">5</text><text x="275" y="68" text-anchor="middle" class="t m cyan tiny">HTML</text></g>
+  <g class="pulse4"><rect x="336" y="0" width="102" height="88" rx="14" class="chip"/><text x="387" y="40" text-anchor="middle" class="t m body">3</text><text x="387" y="68" text-anchor="middle" class="t m cyan tiny">CSS</text></g>
+  <g class="pulse5"><rect x="448" y="0" width="102" height="88" rx="14" class="chip"/><text x="499" y="40" text-anchor="middle" class="t m body">JS</text><text x="499" y="68" text-anchor="middle" class="t m cyan tiny">JAVASCRIPT</text></g>
+  <g class="pulse1"><rect x="560" y="0" width="102" height="88" rx="14" class="chip"/><text x="611" y="40" text-anchor="middle" class="t m body">≈</text><text x="611" y="68" text-anchor="middle" class="t m cyan tiny">TAILWIND</text></g>
+  <g class="pulse2"><rect x="672" y="0" width="102" height="88" rx="14" class="chip"/><text x="723" y="40" text-anchor="middle" class="t m body">SQL</text><text x="723" y="68" text-anchor="middle" class="t m cyan tiny">MYSQL</text></g>
+  <g class="pulse3"><rect x="784" y="0" width="102" height="88" rx="14" class="chip"/><text x="835" y="40" text-anchor="middle" class="t m body">Py</text><text x="835" y="68" text-anchor="middle" class="t m cyan tiny">PYTHON</text></g>
+  <g class="pulse4"><rect x="896" y="0" width="102" height="88" rx="14" class="chip"/><text x="947" y="40" text-anchor="middle" class="t m body">◆</text><text x="947" y="68" text-anchor="middle" class="t m cyan tiny">GIT</text></g>
+  <g class="pulse5"><rect x="1008" y="0" width="102" height="88" rx="14" class="chip"/><text x="1059" y="40" text-anchor="middle" class="t m body">●</text><text x="1059" y="68" text-anchor="middle" class="t m cyan tiny">GITHUB</text></g>
+</g>
+
+<!-- featured -->
+<text x="42" y="650" class="t m cyan h2">04. FEATURED WORK</text>
+<text x="910" y="648" class="t m muted tiny">REAL PROJECTS. REAL LEARNING.</text>
+<line x1="42" y1="668" x2="1158" y2="668" class="line"/>
+
+<rect x="42" y="692" width="720" height="420" rx="18" class="soft"/>
+<text x="70" y="735" class="t h2">JIMNY COFFEE — Point of Sale</text>
+<text x="70" y="775" class="t body">
+  <tspan x="70">Aplikasi kasir berbasis web untuk membantu operasional kedai kopi,</tspan>
+  <tspan x="70" dy="28">mulai dari pesanan pelanggan sampai laporan penjualan.</tspan>
+</text>
+<g class="t m tiny">
+  <rect x="70" y="830" width="78" height="28" rx="8" class="chip"/><text x="109" y="849" text-anchor="middle">Laravel</text>
+  <rect x="158" y="830" width="60" height="28" rx="8" class="chip"/><text x="188" y="849" text-anchor="middle">PHP</text>
+  <rect x="228" y="830" width="74" height="28" rx="8" class="chip"/><text x="265" y="849" text-anchor="middle">MySQL</text>
+  <rect x="312" y="830" width="116" height="28" rx="8" class="chip"/><text x="370" y="849" text-anchor="middle">Tailwind CSS</text>
+  <rect x="438" y="830" width="92" height="28" rx="8" class="chip"/><text x="484" y="849" text-anchor="middle">Alpine.js</text>
+</g>
+<g class="t body">
+  <text x="70" y="902"><tspan class="cyan">▣</tspan>  Kasir &amp; transaksi  —  Pesanan dan pembayaran Midtrans</text>
+  <text x="70" y="944"><tspan class="cyan">▣</tspan>  Menu &amp; stok       —  Manajemen menu, reservasi, dan stok</text>
+  <text x="70" y="986"><tspan class="cyan">▣</tspan>  Hak akses          —  Owner, admin, dan kasir</text>
+  <text x="70" y="1028"><tspan class="cyan">▣</tspan>  Operasional        —  Shift, kehadiran, dashboard, laporan</text>
+  <text x="70" y="1070"><tspan class="cyan">▣</tspan>  Smart Assistant    —  Ringkasan dan pengingat sesuai peran</text>
+</g>
+
+<rect x="782" y="692" width="376" height="420" rx="18" class="soft"/>
+<!-- abstract 3D room thumbnail -->
+<g transform="translate(820 730)">
+  <polygon points="0,120 135,45 270,120 135,195" fill="#0c2235" stroke="#2a7396" stroke-width="2"/>
+  <rect x="92" y="74" width="86" height="70" rx="6" fill="#0b1724" stroke="#38bdf8"/>
+  <rect x="105" y="84" width="60" height="34" rx="3" fill="#112c40"/>
+  <circle cx="210" cy="100" r="26" fill="#12314a"/>
+  <rect x="198" y="128" width="24" height="38" rx="8" fill="#0e2234"/>
+  <path d="M28 135h48M48 115v40M235 145h26" stroke="#38bdf8" opacity=".6"/>
+</g>
+<text x="810" y="962" class="t h2">Cinematic 3D Portfolio</text>
+<text x="810" y="998" class="t small muted">
+  <tspan x="810">Animasi, elemen 3D, dan</tspan><tspan x="810" dy="20">interaksi visual untuk</tspan><tspan x="810" dy="20">menampilkan profil &amp; proyek.</tspan>
+</text>
+<text x="810" y="1080" class="t m cyan small">Explore project  →</text>
+
+<!-- contribution arcade -->
+<text x="42" y="1168" class="t m cyan h2">05. CONTRIBUTION ARCADE</text>
+<text x="1010" y="1166" class="t m muted tiny">KEEP COMMITTING</text>
+<line x1="42" y1="1186" x2="1158" y2="1186" class="line"/>
+<rect x="42" y="1205" width="1116" height="130" rx="16" fill="#081827" stroke="#1b5678"/>
+<g opacity=".8">
+  <path d="M70 1265 H180 V1235 H280 V1295 H390 V1245 H500 V1305 H610 V1240 H720 V1290 H830 V1230 H940 V1288 H1050"
+        fill="none" stroke="#dbeafe" stroke-width="3"/>
+</g>
+<g class="dot" fill="#dbeafe">
+  <circle cx="120" cy="1250" r="4"/><circle cx="150" cy="1250" r="4"/><circle cx="210" cy="1250" r="4"/>
+  <circle cx="340" cy="1278" r="4"/><circle cx="455" cy="1260" r="4"/><circle cx="575" cy="1286" r="4"/>
+  <circle cx="690" cy="1250" r="4"/><circle cx="805" cy="1274" r="4"/><circle cx="920" cy="1248" r="4"/>
+</g>
+<g class="pac" transform="translate(70 1244)">
+  <path d="M0 0 A20 20 0 1 0 0 40 L18 20 Z" fill="#fde047"/>
+</g>
+<rect x="1090" y="1228" width="18" height="18" rx="4" fill="#22c55e"/>
+<rect x="1115" y="1255" width="18" height="18" rx="4" fill="#22c55e"/>
+<rect x="1088" y="1282" width="18" height="18" rx="4" fill="#16a34a"/>
+
+<!-- learning -->
+<text x="42" y="1392" class="t m cyan h2">06. LEARNING JOURNEY</text>
+<text x="1010" y="1390" class="t m muted tiny">ALWAYS A STUDENT</text>
+<line x1="42" y1="1410" x2="1158" y2="1410" class="line"/>
+<g class="t">
+  <rect x="42" y="1432" width="210" height="104" rx="14" class="chip"/>
+  <text x="62" y="1468" class="cyan h2">Web development</text><text x="62" y="1496" class="small muted">Modern web applications</text>
+  <rect x="266" y="1432" width="210" height="104" rx="14" class="chip"/>
+  <text x="286" y="1468" class="cyan h2">Database</text><text x="286" y="1496" class="small muted">Structured &amp; scalable data</text>
+  <rect x="490" y="1432" width="210" height="104" rx="14" class="chip"/>
+  <text x="510" y="1468" class="cyan h2">Intelligent systems</text><text x="510" y="1496" class="small muted">NLP · CNN · image processing</text>
+  <rect x="714" y="1432" width="210" height="104" rx="14" class="chip"/>
+  <text x="734" y="1468" class="cyan h2">Collaboration</text><text x="734" y="1496" class="small muted">Git · GitHub · teamwork</text>
+  <rect x="938" y="1432" width="220" height="104" rx="14" class="chip"/>
+  <text x="958" y="1468" class="cyan h2">Documentation</text><text x="958" y="1496" class="small muted">Write · share · explain</text>
+</g>
+
+<!-- footer -->
+<line x1="42" y1="1575" x2="1158" y2="1575" class="line"/>
+<text x="48" y="1618" class="t m cyan h2">&lt;/&gt;  Small steps. Useful things.</text>
+<text x="48" y="1646" class="t m muted tiny">LEARNING TODAY FOR A BRIGHTER TOMORROW.</text>
+<text x="920" y="1624" class="t m cyan small">Explore my repositories  →</text>
+
+<rect x="0" y="-20" width="1200" height="3" fill="#38bdf8" opacity=".25" class="scan"/>
+</svg>
