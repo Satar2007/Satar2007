@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/dashboard-v5-3d-tech.svg" width="100%" alt="Rafael Bintang developer dashboard" />
+  <img src="assets/dashboard-v6-1-animated-3d-tech.svg" width="100%" alt="Rafael Bintang developer dashboard" />
 </p>
 
 ## Contribution arcade
