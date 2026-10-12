@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header-character-v5.svg" width="100%" alt="SATAR - Rafael Bintang developer profile header" />
+<img src="assets/header-rafael-3d-v1.svg" width="100%" alt="SATAR - Rafael Bintang developer profile header" />
 
 </div>
 
