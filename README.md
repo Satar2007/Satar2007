@@ -8,6 +8,12 @@
   <img src="assets/dashboard-v6-1-animated-3d-tech.svg" width="100%" alt="Rafael Bintang developer dashboard" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/Satar2007/Proyek-Informatika">JIMNY COFFEE repository ↗</a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/Satar2007/cinematic-3d-portfolio-template">Cinematic 3D Portfolio repository ↗</a>
+</p>
+
 ## Contribution arcade
 
 <picture>
