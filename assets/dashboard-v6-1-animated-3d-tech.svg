@@ -3,24 +3,24 @@
 <desc id="desc">Futuristic developer dashboard for the Satar2007 GitHub profile.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#07111f"/>
-    <stop offset="0.55" stop-color="#081827"/>
-    <stop offset="1" stop-color="#06111c"/>
+    <stop offset="0" stop-color="#02060e"/>
+    <stop offset="0.55" stop-color="#100810"/>
+    <stop offset="1" stop-color="#C50337"/>
   </linearGradient>
   <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#0a1b2b"/>
-    <stop offset="1" stop-color="#07131f"/>
+    <stop offset="0" stop-color="#220812"/>
+    <stop offset="1" stop-color="#180810"/>
   </linearGradient>
   <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#22d3ee"/>
-    <stop offset="1" stop-color="#38bdf8"/>
+    <stop offset="0" stop-color="#c50337"/>
+    <stop offset="1" stop-color="#ff547d"/>
   </linearGradient>
   <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
     <feGaussianBlur stdDeviation="4" result="blur"/>
     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-    <path d="M32 0H0V32" fill="none" stroke="#12314a" stroke-width="1" opacity=".25"/>
+    <path d="M32 0H0V32" fill="none" stroke="#422033" stroke-width="1" opacity=".25"/>
   </pattern>
   
   <filter id="techCardGlow" x="-60%" y="-60%" width="220%" height="220%">
@@ -33,19 +33,19 @@
   <linearGradient id="techSweepGradient" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
     <stop offset=".48" stop-color="#ffffff" stop-opacity="0"/>
-    <stop offset=".5" stop-color="#d9fbff" stop-opacity=".48"/>
+    <stop offset=".5" stop-color="#ffe4ec" stop-opacity=".48"/>
     <stop offset=".52" stop-color="#ffffff" stop-opacity="0"/>
     <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
   </linearGradient>
 
   <style>
-    .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#dbeafe}
+    .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}
     .m{font-family:Consolas,Menlo,monospace}
-    .muted{fill:#8aa0b8}
-    .cyan{fill:#38bdf8}
-    .line{stroke:#1e5677;stroke-width:1}
-    .soft{fill:#0b1d2d;stroke:#174462;stroke-width:1.2}
-    .chip{fill:#0d2032;stroke:#1a5474;stroke-width:1.2}
+    .muted{fill:#cbbbc2}
+    .cyan{fill:#ff547d}
+    .line{stroke:#713046;stroke-width:1}
+    .soft{fill:#140b13;stroke:#612137;stroke-width:1.2}
+    .chip{fill:#1f0d17;stroke:#713046;stroke-width:1.2}
     .title{font-size:34px;font-weight:700}
     .h2{font-size:20px;font-weight:700;letter-spacing:1.5px}
     .body{font-size:18px}
@@ -72,15 +72,15 @@
 
 <rect width="1200" height="1480" rx="28" fill="url(#bg)"/>
 <rect width="1200" height="1480" rx="28" fill="url(#grid)"/>
-<rect x="2" y="2" width="1196" height="1476" rx="26" fill="none" stroke="#1e6d93" stroke-width="2"/>
+<rect x="2" y="2" width="1196" height="1476" rx="26" fill="none" stroke="#8f2c49" stroke-width="2"/>
 
 <!-- header -->
 <text x="48" y="62" class="t m cyan title">&gt;_ Developer dashboard</text>
 <text x="830" y="58" class="t m muted small">BUILD · LEARN · EXPLORE · CREATE</text>
 <line x1="42" y1="90" x2="1158" y2="90" class="line"/>
-<circle cx="1090" cy="45" r="5" fill="#38bdf8" class="pulse1"/>
-<circle cx="1110" cy="45" r="5" fill="#38bdf8" class="pulse2"/>
-<circle cx="1130" cy="45" r="5" fill="#38bdf8" class="pulse3"/>
+<circle cx="1090" cy="45" r="5" fill="#ff547d" class="pulse1"/>
+<circle cx="1110" cy="45" r="5" fill="#ff547d" class="pulse2"/>
+<circle cx="1130" cy="45" r="5" fill="#ff547d" class="pulse3"/>
 
 <!-- about -->
 <rect x="42" y="118" width="660" height="300" rx="18" class="soft"/>
@@ -128,7 +128,7 @@
         begin="-0.00s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="3.80s"
@@ -155,7 +155,7 @@
         begin="-0.22s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="4.15s"
@@ -182,7 +182,7 @@
         begin="-0.44s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="4.50s"
@@ -209,7 +209,7 @@
         begin="-0.66s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="3.80s"
@@ -236,7 +236,7 @@
         begin="-0.88s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="4.15s"
@@ -263,7 +263,7 @@
         begin="-1.10s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="4.50s"
@@ -290,7 +290,7 @@
         begin="-1.32s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="3.80s"
@@ -317,7 +317,7 @@
         begin="-1.54s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="4.15s"
@@ -344,7 +344,7 @@
         begin="-1.76s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="4.50s"
@@ -371,7 +371,7 @@
         begin="-1.98s"
         repeatCount="indefinite"/>
       <ellipse cx="51.5" cy="100" rx="39" ry="7"
-        fill="#38bdf8" opacity=".22" filter="url(#techCardGlow)">
+        fill="#ff547d" opacity=".22" filter="url(#techCardGlow)">
         <animate attributeName="opacity"
           values=".16;.55;.16"
           dur="3.80s"
@@ -432,12 +432,12 @@
 <rect x="782" y="692" width="376" height="420" rx="18" class="soft"/>
 <!-- abstract 3D room thumbnail -->
 <g transform="translate(820 730)">
-  <polygon points="0,120 135,45 270,120 135,195" fill="#0c2235" stroke="#2a7396" stroke-width="2"/>
-  <rect x="92" y="74" width="86" height="70" rx="6" fill="#0b1724" stroke="#38bdf8"/>
-  <rect x="105" y="84" width="60" height="34" rx="3" fill="#112c40"/>
-  <circle cx="210" cy="100" r="26" fill="#12314a"/>
-  <rect x="198" y="128" width="24" height="38" rx="8" fill="#0e2234"/>
-  <path d="M28 135h48M48 115v40M235 145h26" stroke="#38bdf8" opacity=".6"/>
+  <polygon points="0,120 135,45 270,120 135,195" fill="#1a0c15" stroke="#8f2c49" stroke-width="2"/>
+  <rect x="92" y="74" width="86" height="70" rx="6" fill="#130a12" stroke="#ff547d"/>
+  <rect x="105" y="84" width="60" height="34" rx="3" fill="#2c0e1c"/>
+  <circle cx="210" cy="100" r="26" fill="#422033"/>
+  <rect x="198" y="128" width="24" height="38" rx="8" fill="#200d19"/>
+  <path d="M28 135h48M48 115v40M235 145h26" stroke="#ff547d" opacity=".6"/>
 </g>
 <text x="810" y="962" class="t h2">Cinematic 3D Portfolio</text>
 <text x="810" y="998" class="t small muted">
@@ -468,5 +468,5 @@
 <text x="48" y="1451" class="t m muted tiny">LEARNING TODAY FOR A BRIGHTER TOMORROW.</text>
 <text x="920" y="1429" class="t m cyan small">Explore my repositories  →</text>
 
-<rect x="0" y="-20" width="1200" height="3" fill="#38bdf8" opacity=".25" class="scan"/>
+<rect x="0" y="-20" width="1200" height="3" fill="#ff547d" opacity=".25" class="scan"/>
 </svg>
