@@ -87,23 +87,22 @@
 
 <!-- header -->
 <text x="48" y="62" class="t m cyan title">&gt;_ Developer dashboard</text>
-<text x="830" y="58" class="t m muted small">BUILD · LEARN · EXPLORE · CREATE</text>
+<text x="1158" y="76" text-anchor="end" class="t m muted tiny">BUILD · LEARN · EXPLORE · CREATE</text>
 <line x1="42" y1="90" x2="1158" y2="90" class="line"/>
-<circle cx="1090" cy="45" r="5" fill="#ff547d" class="pulse1"/>
-<circle cx="1110" cy="45" r="5" fill="#ff547d" class="pulse2"/>
-<circle cx="1130" cy="45" r="5" fill="#ff547d" class="pulse3"/>
+<circle cx="1090" cy="38" r="5" fill="#ff547d" class="pulse1"/>
+<circle cx="1110" cy="38" r="5" fill="#ff547d" class="pulse2"/>
+<circle cx="1130" cy="38" r="5" fill="#ff547d" class="pulse3"/>
 
 <!-- about -->
 <rect x="42" y="118" width="660" height="300" rx="18" class="soft"/>
 <text x="68" y="155" class="t m cyan h2">01. ABOUT ME</text>
-<text x="68" y="198" class="t body">
+<text x="68" y="206" class="t body">
   <tspan x="68" dy="0">Halo! Saya Bintang, mahasiswa S1 Informatika</tspan>
-  <tspan x="68" dy="28">Universitas Sanata Dharma, berasal dari Manyaran,</tspan>
-  <tspan x="68" dy="28">Wonogiri. Saya membangun aplikasi yang bermanfaat,</tspan>
-  <tspan x="68" dy="28">mendokumentasikan proses belajar, dan berkolaborasi</tspan>
-  <tspan x="68" dy="28">melalui Git dan GitHub.</tspan>
+  <tspan x="68" dy="30">Universitas Sanata Dharma.</tspan>
+  <tspan x="68" dy="40">Saya membangun aplikasi yang bermanfaat,</tspan>
+  <tspan x="68" dy="30">mendokumentasikan proses belajar, dan</tspan>
+  <tspan x="68" dy="30">berkolaborasi melalui Git dan GitHub.</tspan>
 </text>
-<text x="68" y="382" class="t muted small">⌖  Manyaran, Wonogiri</text>
 
 <!-- focus -->
 <rect x="724" y="118" width="434" height="300" rx="18" class="soft"/>
