@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 860" role="img" aria-labelledby="title desc">
+  <title id="title">SATAR Control Deck V2</title>
+  <desc id="desc">Animated futuristic dashboard presenting profile overview, skill loadout, projects, and portals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#081018"/>
+      <stop offset="100%" stop-color="#04070d"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff4d6d"/>
+      <stop offset="50%" stop-color="#7e2fff"/>
+      <stop offset="100%" stop-color="#4ddfff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .ui{font-family:"Segoe UI",Arial,sans-serif}
+      .mono{font-family:"DejaVu Sans Mono",Consolas,monospace}
+      .panel{fill:#09131d;stroke:#243448;stroke-width:2;rx:18}
+      .title{font:700 38px "Segoe UI",Arial,sans-serif;fill:#edf6ff}
+      .tag{font:600 18px "DejaVu Sans Mono",Consolas,monospace;letter-spacing:2px;fill:#ff95aa}
+      .text{font:400 22px "Segoe UI",Arial,sans-serif;fill:#dbe8f5}
+      .muted{font:400 19px "Segoe UI",Arial,sans-serif;fill:#99afc4}
+      .bold{font-weight:700}
+    </style>
+  </defs>
+  <rect width="1600" height="860" fill="url(#bg)"/>
+  <rect x="28" y="28" width="1544" height="804" rx="28" fill="none" stroke="#1f2c3f" stroke-width="3"/>
+  <text x="54" y="82" class="mono" font-size="26" fill="#8ab8d4">CONTROL DECK // SATAR PROFILE V2</text>
+  <line x1="54" y1="102" x2="1546" y2="102" stroke="url(#edge)" stroke-width="3"/>
+
+  <g>
+    <rect x="54" y="132" width="472" height="252" class="panel"/>
+    <text x="82" y="173" class="tag">PLAYER STATUS</text>
+    <text x="82" y="218" class="title">Rafael Bintang</text>
+    <text x="82" y="256" class="text">Informatics student building practical software</text>
+    <text x="82" y="287" class="text">with a strong interest in interface design,</text>
+    <text x="82" y="318" class="text">automation, and project-based learning.</text>
+    <g transform="translate(82 338)">
+      <rect width="390" height="14" rx="7" fill="#151f2b"/>
+      <rect width="290" height="14" rx="7" fill="url(#edge)"><animate attributeName="width" values="120;330;290" dur="5s" repeatCount="indefinite"/></rect>
+      <text x="0" y="42" class="mono" font-size="15" fill="#a8bfd1">mission progress :: 74% complete</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="548" y="132" width="492" height="252" class="panel"/>
+    <text x="576" y="173" class="tag">STACK LOADOUT</text>
+    <text x="576" y="216" class="text bold">Core tools</text>
+    <text x="576" y="252" class="muted">Java • Python • JavaScript • HTML/CSS</text>
+    <text x="576" y="304" class="text bold">Frameworks &amp; workflow</text>
+    <text x="576" y="340" class="muted">Laravel • Git/GitHub • UI composition • automation</text>
+    <g transform="translate(576 356)">
+      <rect width="410" height="8" rx="4" fill="#151f2b"/>
+      <rect width="250" height="8" rx="4" fill="#ff5f7a"><animate attributeName="width" values="90;330;250" dur="4.6s" repeatCount="indefinite"/></rect>
+      <rect y="28" width="410" height="8" rx="4" fill="#151f2b"/>
+      <rect y="28" width="340" height="8" rx="4" fill="#68dbff"><animate attributeName="width" values="140;390;340" dur="5.4s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+
+  <g>
+    <rect x="1062" y="132" width="484" height="252" class="panel"/>
+    <text x="1090" y="173" class="tag">MISSION BOARD</text>
+    <text x="1090" y="218" class="text bold">Now building</text>
+    <text x="1090" y="255" class="muted">• cleaner developer branding</text>
+    <text x="1090" y="288" class="muted">• more polished project presentation</text>
+    <text x="1090" y="321" class="muted">• automated profile visuals via GitHub Actions</text>
+    <text x="1090" y="354" class="muted">• portfolio consistency across repositories</text>
+  </g>
+
+  <g>
+    <rect x="54" y="410" width="738" height="254" class="panel"/>
+    <text x="82" y="451" class="tag">FEATURED QUESTS</text>
+    <rect x="84" y="484" width="320" height="144" rx="14" fill="#0f1a26" stroke="#2f4157"/>
+    <text x="108" y="520" class="text bold">JIMNY COFFEE</text>
+    <text x="108" y="553" class="muted">Forecasting, evaluation, and practical</text>
+    <text x="108" y="579" class="muted">development work inside a real project repo.</text>
+    <text x="108" y="611" class="mono" font-size="15" fill="#ff95aa">quest type :: data + app + teamwork</text>
+    <rect x="434" y="484" width="320" height="144" rx="14" fill="#0f1a26" stroke="#2f4157"/>
+    <text x="458" y="520" class="text bold">CINEMATIC 3D PORTFOLIO</text>
+    <text x="458" y="553" class="muted">Visual experimentation with modern</text>
+    <text x="458" y="579" class="muted">presentation and immersive design cues.</text>
+    <text x="458" y="611" class="mono" font-size="15" fill="#68dbff">quest type :: branding + interface</text>
+  </g>
+
+  <g>
+    <rect x="820" y="410" width="726" height="254" class="panel"/>
+    <text x="848" y="451" class="tag">NETWORK PORTALS</text>
+    <g transform="translate(850 488)">
+      <rect width="655" height="42" rx="12" fill="#0f1a26" stroke="#2b3d53"/>
+      <rect y="66" width="655" height="42" rx="12" fill="#0f1a26" stroke="#2b3d53"/>
+      <rect y="132" width="655" height="42" rx="12" fill="#0f1a26" stroke="#2b3d53"/>
+      <text x="20" y="27" class="mono" font-size="18" fill="#ecf6ff">github.com/Satar2007</text>
+      <text x="20" y="93" class="mono" font-size="18" fill="#ecf6ff">focus: meaningful projects + learning logs</text>
+      <text x="20" y="159" class="mono" font-size="18" fill="#ecf6ff">mode: build useful things, improve continuously</text>
+      <rect x="0" y="0" width="180" height="42" fill="url(#edge)" opacity="0.18"><animate attributeName="x" values="-220;655" dur="7s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="56" y="728" class="mono" font-size="20" fill="#ff95aa">SYSTEM SIGNALS</text>
+    <line x1="56" y1="744" x2="1544" y2="744" stroke="#243448"/>
+    <polyline fill="none" stroke="#68dbff" stroke-width="3" points="76,786 188,786 216,764 252,812 302,754 336,786 432,786 468,742 512,786 640,786 694,770 742,804 820,786 896,786 940,752 1008,786 1134,786 1170,764 1214,786 1332,786 1386,748 1468,786">
+      <animate attributeName="stroke-dasharray" values="0,2400;2400,0" dur="4.8s" repeatCount="indefinite"/>
+    </polyline>
+    <text x="1170" y="818" class="mono" font-size="16" fill="#9eb4c8">readme + animated assets + live workflows</text>
+  </g>
+</svg>
