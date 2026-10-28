@@ -8,7 +8,6 @@ name: Profile - Pac-Man
     paths:
       - '.github/workflows/pacman.yml'
       - 'scripts/publish-assets.sh'
-      - 'README.md'
 permissions:
   contents: write
 concurrency:
@@ -26,7 +25,7 @@ jobs:
           ref: main
           fetch-depth: 0
       - name: Generate Pac-Man light and dark SVGs
-        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa # main, verified 2026-09-30
         with:
           github_user_name: Satar2007
           github_token: ${{ secrets.GITHUB_TOKEN }}

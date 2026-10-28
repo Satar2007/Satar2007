@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a rotating, orthographic contribution calendar.
+"""Render a rotating, orthographic contribution calendar. No web renderer needed.
 
 Production reads GitHub GraphQL with GH_TOKEN. --input accepts a recorded
 contributionCalendar object for offline validation; it never invents data.
@@ -15,8 +15,8 @@ import urllib.request
 
 from PIL import Image, ImageDraw, ImageFont
 
-WIDTH, HEIGHT = 960, 480
-BG = (6, 9, 16)
+WIDTH, HEIGHT = 900, 450
+BG = (10, 16, 29)
 QUERY = """query($login: String!) {
   user(login: $login) {
     contributionsCollection {
@@ -80,32 +80,23 @@ def font(size, bold=False):
     return ImageFont.load_default(size=size)
 
 
-def draw_gradient(draw, size, top, bottom):
-    width, height = size
-    for y in range(height):
-        t = y / max(1, height - 1)
-        color = tuple(int(top[i] * (1 - t) + bottom[i] * t) for i in range(3))
-        draw.line((0, y, width, y), fill=color)
-
-
-def render(calendar, login, output, frames=72, label=''):
+def render(calendar, login, output, frames=80, label=''):
     days = validate_calendar(calendar)
-    peak = max(day[2] for day in days) or 1
+    peak = max(day[2] for day in days)
     week_count = len(calendar['weeks'])
     total = calendar['totalContributions']
     output.mkdir(parents=True, exist_ok=True)
-    top_font, small_font, total_font = font(27, True), font(13), font(15, True)
-    label_font = font(16, True)
+    top_font, small_font, total_font = font(25, True), font(13), font(15, True)
     rendered = []
     palette = None
     for frame in range(frames):
-        angle = 2 * math.pi * frame / frames + 0.45
+        angle = 2 * math.pi * frame / frames + 0.55
         ca, sa = math.cos(angle), math.sin(angle)
 
         def project(point):
             x, y, z = point
             xr, yr = ca * x - sa * y, sa * x + ca * y
-            return (WIDTH / 2 + xr * 38, 292 + yr * 18 - z * 38)
+            return (WIDTH / 2 + xr * 36, 279 + yr * 17 - z * 36)
 
         def depth(point):
             x, y, z = point
@@ -113,78 +104,47 @@ def render(calendar, login, output, frames=72, label=''):
 
         im = Image.new('RGB', (WIDTH, HEIGHT), BG)
         draw = ImageDraw.Draw(im)
-        draw_gradient(draw, (WIDTH, HEIGHT), (8, 10, 18), (18, 7, 16))
-
-        # ambient glows
-        for bbox, color in [((50, 30, 420, 240), (110, 28, 48)), ((650, 10, 930, 220), (25, 74, 95))]:
-            draw.ellipse(bbox, fill=color)
-        overlay = Image.new('RGBA', (WIDTH, HEIGHT), (0, 0, 0, 0))
-        odraw = ImageDraw.Draw(overlay)
-        for step in range(0, WIDTH, 40):
-            odraw.line((step, 0, step, HEIGHT), fill=(255, 80, 120, 14))
-        for step in range(0, HEIGHT, 40):
-            odraw.line((0, step, WIDTH, step), fill=(80, 210, 255, 12))
-        im = Image.alpha_composite(im.convert('RGBA'), overlay).convert('RGB')
-        draw = ImageDraw.Draw(im)
-
-        draw.rounded_rectangle((2, 2, WIDTH - 3, HEIGHT - 3), 24, outline=(39, 55, 73), width=2)
-        draw.text((34, 26), 'CONTRIBUTION CITY // SATAR V2', font=top_font, fill=(235, 243, 252))
-        draw.text((35, 61), '@' + login + '  /  ' + days[0][3].isoformat() + ' to ' + days[-1][3].isoformat(), font=small_font, fill=(156, 175, 197))
-        draw.text((WIDTH - 34, 38), f'{total:,} contributions', anchor='ra', font=total_font, fill=(94, 220, 255))
+        draw.rounded_rectangle((1, 1, WIDTH - 2, HEIGHT - 2), 20, outline=(34, 48, 69), width=2)
+        draw.text((34, 26), 'CONTRIBUTION WORLD', font=top_font, fill=(226, 237, 250))
+        draw.text((35, 63), '@' + login + '  /  ' + days[0][3].isoformat() + ' to ' + days[-1][3].isoformat(), font=small_font, fill=(139, 163, 192))
+        draw.text((WIDTH - 34, 38), f'{total:,} contributions', anchor='ra', font=total_font, fill=(84, 211, 249))
         if label:
-            draw.rounded_rectangle((34, 84, 390, 112), 10, fill=(12, 20, 30), outline=(120, 36, 56))
-            draw.text((48, 90), label, font=label_font, fill=(255, 179, 98))
-
+            draw.text((35, 88), label, font=small_font, fill=(255, 190, 70))
+        # A day occupies one tile. The long axis follows the week order.
         base_x, base_y = week_count * 0.32 / 2 + 0.3, 2.65
         base = [(-base_x, -base_y, -0.05), (base_x, -base_y, -0.05),
                 (base_x, base_y, -0.05), (-base_x, base_y, -0.05)]
-        draw.polygon([project(p) for p in base], fill=(12, 19, 31), outline=(56, 83, 109))
+        draw.polygon([project(p) for p in base], fill=(15, 25, 42), outline=(44, 74, 99))
         faces = []
         for week_no, weekday, count, date in days:
             x, y = (week_no - (week_count - 1) / 2) * 0.32, (weekday - 3) * 0.68
-            height = 0.055 if count == 0 else 0.20 + 3.15 * math.sqrt(count / peak)
+            height = 0.055 if count == 0 else 0.18 + 3.05 * math.sqrt(count / peak)
             dx, dy = 0.127, 0.277
             vertices = [(x-dx,y-dy,0), (x+dx,y-dy,0), (x+dx,y+dy,0), (x-dx,y+dy,0),
                         (x-dx,y-dy,height), (x+dx,y-dy,height), (x+dx,y+dy,height), (x-dx,y+dy,height)]
             if count == 0:
-                color = (25, 35, 48)
+                color = (29, 46, 65)
             else:
                 intensity = math.sqrt(count / peak)
-                color = (
-                    int(75 + 180 * intensity),
-                    int(35 + 95 * intensity),
-                    int(60 + 160 * intensity),
-                )
-                if intensity > 0.7:
-                    color = (
-                        min(255, color[0] + 15),
-                        min(255, color[1] + 60),
-                        min(255, color[2] + 70),
-                    )
+                color = (int(40 + 75 * intensity), int(137 + 76 * intensity), int(211 + 39 * intensity))
+            # Include only the two outward sides facing the camera plus the top.
             side_x = [1, 2, 6, 5] if sa >= 0 else [0, 3, 7, 4]
             side_y = [3, 2, 6, 7] if ca >= 0 else [0, 1, 5, 4]
-            for indices, factor in [(side_x, 0.52), (side_y, 0.72), ([4,5,6,7], 1.0)]:
+            for indices, factor in [(side_x, 0.53), (side_y, 0.73), ([4,5,6,7], 1.0)]:
                 points = [vertices[i] for i in indices]
                 faces.append((sum(depth(p) for p in points) / 4, points,
                               tuple(int(c * factor) for c in color)))
         for _, points, color in sorted(faces, key=lambda face: face[0]):
             draw.polygon([project(p) for p in points], fill=color)
-
-        # HUD bottom
-        draw.line((34, 423, WIDTH - 34, 423), fill=(35, 51, 70))
-        draw.text((35, 438), '1 block = 1 day  /  Height uses square-root scaling', font=small_font, fill=(156, 175, 197))
-        draw.text((WIDTH - 34, 438), 'FULL FUTURISTIC GAMING // LIVE FEED', font=small_font, anchor='ra', fill=(94, 220, 255))
-        draw.rounded_rectangle((34, 390, 218, 410), 9, fill=(14, 20, 31), outline=(88, 37, 53))
-        pct = (frame % frames) / (frames - 1)
-        draw.rounded_rectangle((36, 392, 36 + int(180 * (0.35 + 0.55 * abs(math.sin(frame / 9)))), 408), 8, fill=(255, 94, 130))
-        draw.text((128, 406), 'city energy', anchor='mm', font=small_font, fill=(235, 243, 252))
-
+        draw.line((34, 399, 866, 399), fill=(34, 48, 69))
+        draw.text((35, 414), '1 block = 1 day  /  Height uses square-root scaling', font=small_font, fill=(139, 163, 192))
+        draw.text((865, 414), 'SATAR  /  GITHUB', font=small_font, anchor='ra', fill=(84, 211, 249))
         if frame == 0:
             im.save(output / 'skyline-poster.png')
             palette = im.quantize(colors=128)
         rendered.append(im.quantize(palette=palette, dither=Image.Dither.NONE))
     tmp = output / 'skyline.tmp.gif'
-    rendered[0].save(tmp, save_all=True, append_images=rendered[1:], duration=90,
+    rendered[0].save(tmp, save_all=True, append_images=rendered[1:], duration=100,
                      loop=0, optimize=True, disposal=2)
     tmp.replace(output / 'skyline.gif')
     print(f'Rendered {frames} frames, {len(days)} days, {total} contributions.')
@@ -195,7 +155,7 @@ def main():
     parser.add_argument('--username', default='Satar2007')
     parser.add_argument('--output', type=Path, default=Path('assets/generated'))
     parser.add_argument('--input', type=Path)
-    parser.add_argument('--frames', type=int, default=72)
+    parser.add_argument('--frames', type=int, default=80)
     parser.add_argument('--label', default='')
     args = parser.parse_args()
     if not 2 <= args.frames <= 120:
