@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">SATAR Developer Interface V2</title>
+  <desc id="desc">Animated futuristic gaming style profile header for Rafael Bintang.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#05070d"/>
+      <stop offset="55%" stop-color="#120814"/>
+      <stop offset="100%" stop-color="#070b15"/>
+    </linearGradient>
+    <radialGradient id="glowRed" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#ff1744" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff1744" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#60efff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#60efff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#8a2035" stroke-opacity="0.18"/>
+      <circle cx="0" cy="0" r="1.5" fill="#55d4ff" fill-opacity="0.25"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff8ea6" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff416c"/>
+      <stop offset="50%" stop-color="#ff4b2b"/>
+      <stop offset="100%" stop-color="#5ad7ff"/>
+    </linearGradient>
+    <style>
+      .mono{font-family:"DejaVu Sans Mono",Consolas,monospace}
+      .ui{font-family:"Segoe UI",Arial,sans-serif}
+      .small{font-size:19px;letter-spacing:2px;fill:#8ab4ca}
+      .label{font-size:17px;letter-spacing:2.4px;fill:#ff8ea6}
+      .hud{fill:#08111c;stroke:#7a2030;stroke-width:2;rx:16}
+      .muted{fill:#91a8bd}
+      .accent{fill:#66e1ff}
+      .danger{fill:#ff5b7c}
+    </style>
+  </defs>
+
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <rect width="1600" height="520" fill="url(#grid)"/>
+  <ellipse cx="470" cy="240" rx="420" ry="220" fill="url(#glowRed)"/>
+  <ellipse cx="1220" cy="120" rx="280" ry="170" fill="url(#glowCyan)"/>
+  <g opacity="0.65">
+    <path d="M0 430C200 350 280 330 430 365C550 392 640 425 810 380C980 335 1110 280 1350 318C1490 341 1565 395 1600 420V520H0Z" fill="#070d17"/>
+    <path d="M0 455C200 415 360 388 540 412C740 438 970 462 1190 420C1370 387 1490 370 1600 387V520H0Z" fill="#0b1220"/>
+  </g>
+
+  <g filter="url(#softGlow)" opacity="0.9">
+    <circle cx="1185" cy="165" r="74" fill="none" stroke="#ff5475" stroke-width="3">
+      <animateTransform attributeName="transform" type="rotate" from="0 1185 165" to="360 1185 165" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1185" cy="165" r="48" fill="none" stroke="#66e1ff" stroke-width="2" stroke-dasharray="6 8">
+      <animateTransform attributeName="transform" type="rotate" from="360 1185 165" to="0 1185 165" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M1108 165H1262M1185 88V242" stroke="#ff8ea6" stroke-opacity="0.55"/>
+  </g>
+
+  <g>
+    <rect x="58" y="54" width="760" height="44" rx="10" fill="#0c1018" stroke="#69202c"/>
+    <text x="82" y="82" class="mono small">SATAR // DEVELOPER SYSTEM // FULL FUTURISTIC GAMING V2</text>
+  </g>
+
+  <g filter="url(#bigGlow)">
+    <text x="76" y="172" class="ui" font-size="68" font-weight="800" fill="#ecf6ff">RAFAEL <tspan fill="#ff5d7d">BINTANG_</tspan></text>
+  </g>
+  <text x="80" y="212" class="mono" font-size="26" fill="#5ad7ff">Informatics Student • Creative Developer • Interface Builder</text>
+  <text x="81" y="247" class="mono" font-size="20" fill="#d9f2ff">booting profile modules :: portfolio / automation / web / design</text>
+
+  <g>
+    <text x="82" y="301" class="label">CURRENT ROLE STREAM</text>
+    <text x="82" y="340" class="ui" font-size="34" font-weight="700" fill="#ffffff">FULL-STACK DEVELOPER</text>
+    <text x="82" y="340" class="ui" font-size="34" font-weight="700" fill="#ffffff" opacity="0">
+      AI EXPLORER
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.28;0.32;0.6;0.64;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="82" y="340" class="ui" font-size="34" font-weight="700" fill="#ffffff" opacity="0">
+      CREATIVE CODER
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.61;0.65;0.92;0.96;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <rect x="82" y="361" width="290" height="4" fill="#2b3340"/>
+    <rect x="82" y="361" width="110" height="4" fill="url(#line)">
+      <animate attributeName="width" values="60;290;170;260;110" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g>
+    <rect x="80" y="392" width="224" height="80" class="hud"/>
+    <rect x="326" y="392" width="224" height="80" class="hud"/>
+    <rect x="572" y="392" width="224" height="80" class="hud"/>
+    <text x="102" y="421" class="mono label">MODE</text>
+    <text x="102" y="452" class="ui" font-size="23" font-weight="700" fill="#ffffff">CINEMATIC BUILD</text>
+    <text x="348" y="421" class="mono label">STATUS</text>
+    <text x="348" y="452" class="ui" font-size="23" font-weight="700" fill="#ffffff">SYSTEM ONLINE</text>
+    <text x="594" y="421" class="mono label">FOCUS</text>
+    <text x="594" y="452" class="ui" font-size="23" font-weight="700" fill="#ffffff">BUILD • LEARN • CREATE</text>
+  </g>
+
+  <g>
+    <rect x="952" y="70" width="560" height="362" rx="18" fill="#09131d" fill-opacity="0.88" stroke="#33465d" stroke-width="2"/>
+    <text x="982" y="104" class="mono" font-size="20" fill="#ff8ea6">terminal://profile_boot.log</text>
+    <line x1="982" y1="118" x2="1482" y2="118" stroke="#1f2a3a"/>
+    <g class="mono" font-size="20">
+      <text x="988" y="160" fill="#5ad7ff">$</text><text x="1015" y="160" fill="#ecf6ff">git fetch origin profile-v2</text>
+      <text x="988" y="196" fill="#5ad7ff">$</text><text x="1015" y="196" fill="#ecf6ff">npm run render:dashboard</text>
+      <text x="1015" y="232" fill="#91a8bd">[ok] animated svg modules linked</text>
+      <text x="1015" y="266" fill="#91a8bd">[ok] metrics / skyline / pacman online</text>
+      <text x="988" y="302" fill="#5ad7ff">$</text><text x="1015" y="302" fill="#ecf6ff">status --focus learning ++</text>
+      <text x="1015" y="338" fill="#ffffff">> SYSTEM STABLE • READY TO DEPLOY</text>
+      <text x="1015" y="372" fill="#ff5d7d">> NEXT QUEST: CRAFT USEFUL SOFTWARE</text>
+    </g>
+    <rect x="985" y="130" width="476" height="14" fill="url(#scan)" opacity="0.45">
+      <animate attributeName="x" from="965" to="1440" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+    <g transform="translate(983 390)">
+      <rect width="488" height="18" rx="9" fill="#151e29"/>
+      <rect width="316" height="18" rx="9" fill="url(#line)">
+        <animate attributeName="width" values="90;410;316" dur="4.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="242" y="13" text-anchor="middle" class="mono" font-size="12" fill="#08111c">PROFILE ENERGY // CHARGING</text>
+    </g>
+  </g>
+
+  <g opacity="0.88">
+    <circle cx="1388" cy="450" r="2" fill="#ffffff"><animate attributeName="opacity" values="0.1;1;0.1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="1462" cy="464" r="1.8" fill="#66e1ff"><animate attributeName="opacity" values="0.1;1;0.1" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1328" cy="474" r="1.8" fill="#ff5d7d"><animate attributeName="opacity" values="0.1;1;0.1" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <rect x="0" y="0" width="220" height="520" fill="url(#scan)" opacity="0.0">
+    <animate attributeName="x" from="-260" to="1600" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.12;0.18;0" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -10,6 +10,7 @@ name: Profile - Metrics
     paths:
       - '.github/workflows/metrics.yml'
       - 'scripts/publish-assets.sh'
+      - 'README.md'
 
 permissions:
   contents: write
@@ -62,7 +63,7 @@ jobs:
           base: header, activity, community, repositories
 
           plugin_languages: 'yes'
-          plugin_languages_limit: 6
+          plugin_languages_limit: 8
           plugin_languages_details: percentage
           plugin_languages_indepth: 'no'
 
@@ -114,12 +115,8 @@ jobs:
         run: |
           mkdir -p assets/generated
 
-          cp /metrics_renders/metrics.svg \
-             assets/generated/metrics.svg
+          cp /metrics_renders/metrics.svg              assets/generated/metrics.svg
 
-          cp /metrics_renders/isocalendar.svg \
-             assets/generated/isocalendar.svg
+          cp /metrics_renders/isocalendar.svg              assets/generated/isocalendar.svg
 
-          bash scripts/publish-assets.sh \
-            assets/generated/metrics.svg \
-            assets/generated/isocalendar.svg
+          bash scripts/publish-assets.sh             assets/generated/metrics.svg             assets/generated/isocalendar.svg

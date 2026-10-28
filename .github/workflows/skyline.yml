@@ -10,6 +10,7 @@ name: Profile - Rotating Skyline
       - 'scripts/render-skyline.py'
       - 'scripts/requirements-skyline.txt'
       - 'scripts/publish-assets.sh'
+      - 'README.md'
 permissions:
   contents: write
 concurrency:
@@ -35,7 +36,7 @@ jobs:
       - name: Render actual GitHub contributions
         env:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python scripts/render-skyline.py --username Satar2007
+        run: python scripts/render-skyline.py --username Satar2007 --frames 72 --label "FULL FUTURISTIC GAMING // LIVE CONTRIBUTION CITY"
       - name: Publish skyline
         env:
           TARGET_BRANCH: main

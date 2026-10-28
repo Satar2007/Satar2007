@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 200" role="img" aria-labelledby="title desc">
+  <title id="title">SATAR Footer V2</title>
+  <desc id="desc">Animated footer with gaming neon ambience for the GitHub profile.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop offset="0%" stop-color="#060b12"/><stop offset="100%" stop-color="#0c1422"/></linearGradient>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#ff4d6d"/><stop offset="100%" stop-color="#62e2ff"/></linearGradient>
+  </defs>
+  <rect width="1600" height="200" fill="url(#bg)"/>
+  <path d="M0 128C150 102 250 104 390 127C560 155 718 167 918 132C1114 97 1334 97 1600 136V200H0Z" fill="#09111b"/>
+  <path d="M0 149C200 131 406 138 576 156C786 178 986 170 1208 150C1352 137 1470 136 1600 151" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0 2000;2400 0" dur="5.5s" repeatCount="indefinite"/>
+  </path>
+  <text x="74" y="80" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="700" fill="#eff7ff">Thanks for visiting the control deck.</text>
+  <text x="76" y="118" font-family="DejaVu Sans Mono,Consolas,monospace" font-size="21" fill="#95aec6">SATAR2007 // build useful things // keep learning // stay consistent</text>
+  <text x="76" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="20" fill="#dce8f5">If a project catches your eye, feel free to explore the repositories and progress logs.</text>
+  <circle cx="1470" cy="64" r="5" fill="#ffffff"><animate attributeName="opacity" values="0.15;1;0.15" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="1515" cy="82" r="4" fill="#62e2ff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.5s" repeatCount="indefinite"/></circle>
+  <circle cx="1440" cy="102" r="4" fill="#ff6583"><animate attributeName="opacity" values="0.15;1;0.15" dur="3.4s" repeatCount="indefinite"/></circle>
+  <rect x="1366" y="126" width="164" height="16" rx="8" fill="#152030"/>
+  <rect x="1366" y="126" width="92" height="16" rx="8" fill="url(#g)"><animate attributeName="width" values="60;146;92" dur="4.2s" repeatCount="indefinite"/></rect>
+  <text x="1448" y="118" text-anchor="middle" font-family="DejaVu Sans Mono,Consolas,monospace" font-size="13" fill="#9bb4c6">PROFILE LINK STABLE</text>
+</svg>
